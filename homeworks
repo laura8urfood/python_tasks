@@ -37,3 +37,15 @@ Write a program in Python to reverse a word. Words should be provided using inpu
 word=input("Enter a word to reverse: ")
 reverse=word[::-1]
 print(reverse)
+
+"""
+Task 5
+Write a function called factorial that will return the factorial of the number passed as its argument.
+"""
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n-1)
+
+n = int(input("Enter a number: "))
+print("Factorial of", n, "is", factorial(n))
